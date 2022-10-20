@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" thread-count="1" verbose="1">
+
+    <!--Values for Browser(Chrome) -->
+    <parameter name="browser" value="Chrome"/>
+
+    <!--Values for Product(HeroKuApp Product) -->
+    <parameter name="Product" value="HeroKuApp"/>
+
+    <test name="Form Authentication Module">
+        <classes>
+            <class name="tests.formauthentication.FormAUthenticationTest"/>
+        </classes>
+    </test>
+
+    <test name="Drop Down Module">
+        <classes>
+            <class name="tests.dropdown.DropDownPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Check Boxes Module">
+        <classes>
+            <class name="tests.checkbox.CheckBoxPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Mouse Hover Module">
+        <classes>
+            <class name="tests.mousehover.MouseHoverTest"/>
+        </classes>
+    </test>
+
+    <test name="Forgot Password Module">
+        <classes>
+            <class name="tests.forgotpassword.ForgotPasswordTest"/>
+        </classes>
+    </test>
+
+</suite>
