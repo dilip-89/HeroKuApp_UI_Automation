@@ -28,7 +28,7 @@ public class ForgotPasswordTest extends WebConfig {
         softAssert = new SoftAssert();
         homePage = PageFactory.initElements(driver, HomePageElements.class);
         elementsCommonForAllThePage = PageFactory.initElements(driver, CommonElements.class);
-        homePage.clickHomePageLink(20);
+        homePage.clickRelevantHomePageItemLink(20);
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("h2"), "Forgot Password");
         softAssert.assertEquals(elementsCommonForAllThePage.getFormLabelText(1), "E-mail");
         softAssert.assertEquals(elementsCommonForAllThePage.getLoginOrRetrieveBTNText(), "Retrieve password");

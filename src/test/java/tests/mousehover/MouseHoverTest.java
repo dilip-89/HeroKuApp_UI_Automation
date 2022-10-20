@@ -22,7 +22,7 @@ public class MouseHoverTest extends WebConfig {
         softAssert = new SoftAssert();
         homePage = PageFactory.initElements(driver, HomePageElements.class);
         elementsCommonForAllThePage = PageFactory.initElements(driver, CommonElements.class);
-        homePage.clickHomePageLink(25);
+        homePage.clickRelevantHomePageItemLink(25);
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("h3"), "Hovers");
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("p"), "Hover over the image for additional information");
         softAssert.assertAll();

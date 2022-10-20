@@ -30,7 +30,7 @@ public class FormAUthenticationTest extends WebConfig {
         softAssert = new SoftAssert();
         homePage = PageFactory.initElements(driver, HomePageElements.class);
         elementsCommonForAllThePage = PageFactory.initElements(driver, CommonElements.class);
-        homePage.clickHomePageLink(21);
+        homePage.clickRelevantHomePageItemLink(21);
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("h2"), "Login Page");
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("h4"), "This is where you can log into the secure area. Enter " +
                 "tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.");

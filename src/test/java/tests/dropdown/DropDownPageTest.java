@@ -23,7 +23,7 @@ public class DropDownPageTest extends WebConfig {
         homePage = PageFactory.initElements(driver, HomePageElements.class);
         elementsCommonForAllThePage = PageFactory.initElements(driver, CommonElements.class);
         dropDownPageElements = PageFactory.initElements(driver, DropDownPageElements.class);
-        homePage.clickHomePageLink(11);
+        homePage.clickRelevantHomePageItemLink(11);
         softAssert.assertEquals(elementsCommonForAllThePage.getHeaderText("h3"), "Dropdown List");
         softAssert.assertEquals(dropDownPageElements.getDropDownOptionText(1), "Please select an option");
         softAssert.assertEquals(dropDownPageElements.getDropDownOptionText(2), "Option 1");
@@ -34,14 +34,12 @@ public class DropDownPageTest extends WebConfig {
     @Test(priority = 2, dependsOnMethods = {"verifyDropDownPageUIElements"}, description = "Selecting the Option 1 and Verifying whether its selected")
     public void verifySelectingOption1() {
         dropDownPageElements.selectDropDownOption("Option 1");
-        commonOperations.waitForSpecificTime(3000);
         Assert.assertTrue(dropDownPageElements.checkOptionSelected("Option 1"),"Option One is not Selected");
     }
 
     @Test(priority = 3, dependsOnMethods = {"verifySelectingOption1"}, description = "Selecting the Option 2 and Verifying whether its selected")
     public void verifySelectingOption2() {
         dropDownPageElements.selectDropDownOption("Option 2");
-        commonOperations.waitForSpecificTime(3000);
         Assert.assertTrue(dropDownPageElements.checkOptionSelected("Option 2"),"Option Two is not Selected");
     }
 }

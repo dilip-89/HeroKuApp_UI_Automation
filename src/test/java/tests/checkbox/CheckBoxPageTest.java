@@ -22,7 +22,7 @@ public class CheckBoxPageTest extends WebConfig {
         homePage = PageFactory.initElements(driver, HomePageElements.class);
         elementsCommonForAllThePage = PageFactory.initElements(driver, CommonElements.class);
         checkBoxPageElements = PageFactory.initElements(driver, CheckBoxPageElements.class);
-        homePage.clickHomePageLink(6);
+        homePage.clickRelevantHomePageItemLink(6);
         Assert.assertEquals(elementsCommonForAllThePage.getHeaderText("h3"), "Checkboxes");
         checkBoxPageElements.selectCheckBox(2);
     }
