@@ -2,7 +2,6 @@ package tests.dropdown;
 
 import moduleElement.CommonElements;
 import moduleElement.dropdownmodule.DropDownPageElements;
-import moduleElement.formAuthenticationmodule.FormAuthenticationElements;
 import moduleElement.homepage.HomePageElements;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

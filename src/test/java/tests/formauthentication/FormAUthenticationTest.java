@@ -4,7 +4,6 @@ import moduleElement.CommonElements;
 import moduleElement.formAuthenticationmodule.FormAuthenticationElements;
 import moduleElement.homepage.HomePageElements;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

@@ -2,7 +2,6 @@ package tests.forgotpassword;
 
 import moduleElement.CommonElements;
 import moduleElement.forgotpasswordmodule.ForgotPasswordPageElemenst;
-import moduleElement.formAuthenticationmodule.FormAuthenticationElements;
 import moduleElement.homepage.HomePageElements;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.SkipException;

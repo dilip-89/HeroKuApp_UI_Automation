@@ -2,7 +2,6 @@ package tests.checkbox;
 
 import moduleElement.CommonElements;
 import moduleElement.checkboxmodule.CheckBoxPageElements;
-import moduleElement.dropdownmodule.DropDownPageElements;
 import moduleElement.homepage.HomePageElements;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

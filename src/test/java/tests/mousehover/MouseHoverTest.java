@@ -1,7 +1,6 @@
 package tests.mousehover;
 
 import moduleElement.CommonElements;
-import moduleElement.forgotpasswordmodule.ForgotPasswordPageElemenst;
 import moduleElement.homepage.HomePageElements;
 import moduleElement.mousehovermodule.MouseHoverPageElements;
 import org.openqa.selenium.support.PageFactory;
